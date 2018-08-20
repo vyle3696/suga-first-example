@@ -19,14 +19,14 @@ $(document).ready(function(){
         
         if(isNavVerExpand){
             $(".nav-vertical").css({left: '-250px'});
-            $(".project-list").css({"margin-left": '0'});
+            $(".main-content").css({"left": '0'});
             
             $(".menu-close").text("MENU")
             $(".nav-vertical .nav-left > .top").removeClass("list-load-animation");
         }
         else{
             $(".nav-vertical").css({left: '0'});
-            $(".project-list").css({"margin-left": '250px'});
+            $(".main-content").css({"left": '250px'});
             $(".menu-close").text("CLOSE")
             $(".nav-vertical .nav-left > .top").addClass("list-load-animation");
         }
