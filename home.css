@@ -135,7 +135,7 @@ body{
 }
 
 
-.nav-vertical .nav-right > .center{
+.nav-vertical .nav-right .center{
     position: absolute;
     cursor: pointer;
     bottom: 50%;
@@ -145,26 +145,28 @@ body{
     width: 100%;
 }
 
-.nav-vertical .nav-right > .center > p{
-    
+.nav-vertical .nav-right  .center > p{
     transform: rotate(-90deg);
     color: white;
     font-size: 18px;
 }
 
-.nav-vertical .nav-right > .bottom{
+.nav-vertical .nav-right  .bottom{
     position: absolute;
     bottom: 10px;
     text-align: center;
+    left: 26%;
 }
 
-.nav-vertical .social-icon  a {
-    display: block;
+.nav-vertical .nav-right  .bottom li{
+    padding: 5px;
 }
-.nav-vertical .social-icon  a  img{
-    width: 25%;
-    margin: 7px;
+
+.nav-vertical .nav-right  .bottom li a{
+    color: white;
+    font-size: 18px;
 }
+
 
 .social-icon .material-icons i {
     font-size: 30px;
@@ -450,6 +452,32 @@ body{
     margin: 0;
  }
  
+ /****************************************************************/
+
+ .item-project  .item-content .project-icon i {
+    opacity: 0;
+    color: black;
+    font-size: 20px;
+}
+
+.item-project:hover  .item-content  .project-icon  .icon-detail  i{
+    opacity: 1;
+    animation: showup;
+    animation-duration: 2s;
+    animation-delay: 0.05s;
+    animation-fill-mode: forwards;
+}
+
+.item-project:hover  .item-content  .project-icon  .icon-view  i {
+    opacity: 1;
+    animation: showup;
+    animation-duration: 2s;
+    animation-delay: 0.08s;
+    animation-fill-mode: forwards;
+}
+
+ /****************************************************************/
+
  
 .item-project  .item-content .project-icon  .icon-detail  img {
     opacity: 0;
